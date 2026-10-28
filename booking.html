@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content="Make a booking enquiry at Royal Hotel. Tell us when you'd like to stay and we'll be in touch." />
+    <title>Book your stay — Royal Hotel</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="index.html" aria-label="Royal Hotel home"><span class="wordmark__crown" aria-hidden="true">✳</span><span>ROYAL <span class="wordmark__light">HOTEL</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html">Experiences</a><a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-cta" href="booking.html" aria-current="page">Find your stay <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <section class="page-hero page-hero--booking" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow__line"></span> YOUR TIME, YOUR WAY</p>
+        <h1 id="page-title">Let's make<br />room for <em>you.</em></h1>
+        <p>Tell us a little about the stay you have in mind. We’ll get back to you personally.</p>
+      </section>
+      <section class="page-content booking-page">
+        <div class="form-intro reveal">
+          <p class="overline">A NOTE BEFORE YOU BOOK</p>
+          <h2>Consider this<br />your <em>first hello.</em></h2>
+          <p class="body-copy">Share your preferred dates and the kind of room you’re dreaming of. Our team will check availability and follow up to confirm the details.</p>
+          <p class="form-note"><span aria-hidden="true">✳</span> This is a booking enquiry, not an instant reservation. Your stay is confirmed only after our team replies.</p>
+          <a class="text-link" href="mailto:hello@royalhotel.com">Rather email us? <span>↗</span></a>
+        </div>
+        <form class="detail-form reveal" id="reservation-form">
+          <div class="detail-form__heading"><span class="overline">01 / YOUR STAY</span><span class="detail-form__required">* REQUIRED</span></div>
+          <div class="form-grid">
+            <label class="form-field"><span>Check in *</span><input id="reservation-check-in" name="checkIn" type="date" required /></label>
+            <label class="form-field"><span>Check out *</span><input id="reservation-check-out" name="checkOut" type="date" required /></label>
+            <label class="form-field"><span>Guests</span><select name="guests"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></label>
+            <label class="form-field"><span>Room preference</span><select id="room-preference" name="room"><option value="No preference">I'm open to suggestions</option><option>Slow Morning</option><option>Sunday Somewhere</option><option>Room to Unwind</option></select></label>
+          </div>
+          <div class="detail-form__heading detail-form__heading--second"><span class="overline">02 / ABOUT YOU</span></div>
+          <div class="form-grid">
+            <label class="form-field"><span>Your name *</span><input name="name" type="text" autocomplete="name" placeholder="How should we address you?" required /></label>
+            <label class="form-field"><span>Email address *</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+            <label class="form-field form-field--full"><span>A note for us <span class="form-field__optional">(optional)</span></span><textarea name="message" rows="3" placeholder="Special requests, a celebration, or anything else we should know…"></textarea></label>
+          </div>
+          <button class="button button--dark form-submit" type="submit">Prepare booking enquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-result" id="reservation-result" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="booking-reassurance"><span>THOUGHTFUL DETAILS</span><span>PERSONAL REPLIES</span><span>NO OBLIGATION</span></section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="wordmark wordmark--footer" href="index.html"><span class="wordmark__crown" aria-hidden="true">✳</span><span>ROYAL <span class="wordmark__light">HOTEL</span></span></a>
+        <p class="footer-note">Make yourself at home.<br />Stay a little longer.</p>
+        <div class="footer-links"><div><span class="overline">WANDER A LITTLE</span><a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html">Experiences</a></div><div><span class="overline">LET’S MAKE A PLAN</span><a href="booking.html">Plan your stay ↗</a><a href="contact.html">Contact us ↗</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> ROYAL HOTEL. MADE FOR SLOW DAYS.</span><a href="#top">BACK TO THE TOP ↑</a></div>
+    </footer>
+  </body>
+</html>

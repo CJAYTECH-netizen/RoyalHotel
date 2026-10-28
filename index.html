@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta
+      name="description"
+      content="A slower, more thoughtful kind of stay. Discover the rooms, rituals and little details that make Royal Hotel feel like your own."
+    />
+    <title>Royal Hotel — Stay a little longer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="wordmark" href="index.html" aria-label="Royal Hotel home">
+        <span class="wordmark__crown" aria-hidden="true">✳</span>
+        <span>ROYAL <span class="wordmark__light">HOTEL</span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="about.html">The stay</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-cta" href="booking.html">Find your stay <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__image" role="img" aria-label="Sunlit sea and a quiet stretch of coastline"></div>
+        <div class="hero__veil"></div>
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow"><span class="eyebrow__line"></span> A PLACE TO EXHALE</p>
+          <h1 id="hero-title">A little more<br />room to <em>be.</em></h1>
+          <p class="hero__intro">
+            Leave the everyday at the door. Find your own rhythm in a stay made for slowing down.
+          </p>
+          <a class="button button--light" href="#stay">Discover the feeling <span aria-hidden="true">↓</span></a>
+        </div>
+        <span class="hero__caption">YOUR NEXT CHAPTER STARTS HERE</span>
+        <div class="hero__scroll" aria-hidden="true"><span></span> SCROLL TO WANDER</div>
+        <div class="hero__counter" aria-hidden="true">01 <span>—</span> 04</div>
+      </section>
+
+      <section class="booking-wrap" id="book" aria-label="Plan your stay">
+        <form class="booking" id="booking-form">
+          <label class="booking__field" for="check-in">
+            <span class="booking__label">CHECK IN</span>
+            <input id="check-in" name="checkIn" type="date" required />
+          </label>
+          <label class="booking__field" for="check-out">
+            <span class="booking__label">CHECK OUT</span>
+            <input id="check-out" name="checkOut" type="date" required />
+          </label>
+          <label class="booking__field booking__guests" for="guests">
+            <span class="booking__label">GUESTS</span>
+            <select id="guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </label>
+          <button class="button button--dark booking__submit" type="submit">
+            Plan your stay <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+        <p class="booking__message" id="booking-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="welcome section-pad" id="stay">
+        <div class="welcome__aside reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span> THE ART OF STAYING</p>
+          <span class="welcome__number">01<span>/</span>04</span>
+        </div>
+        <div class="welcome__copy reveal">
+          <p class="overline">NOT JUST A PLACE TO SLEEP</p>
+          <h2>Some places make<br />you feel <em>more like you.</em></h2>
+          <p class="body-copy">
+            The best kind of escape doesn’t ask much of you. Just come as you are. We’ll take care of
+            the thoughtful details, the warm welcome and the space to make this time your own.
+          </p>
+          <a class="text-link" href="about.html">A little about us <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="welcome__image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1100&q=85"
+            alt="A serene hotel pool surrounded by palms"
+            loading="lazy"
+          />
+          <span class="image-note">MADE FOR THE MOMENTS IN BETWEEN</span>
+        </div>
+      </section>
+
+      <section class="rooms section-pad" id="rooms">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span> YOUR OWN LITTLE WORLD</p>
+            <h2>Stay in <em>your element.</em></h2>
+          </div>
+          <a class="text-link section-heading__link" href="rooms.html">Explore all rooms <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="room-grid">
+          <article class="room-card reveal">
+            <a class="room-card__image" href="booking.html?room=Slow%20Morning" aria-label="Plan a stay in the Slow Morning room">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85"
+                alt="Warm, light-filled guest room with a cozy king bed"
+                loading="lazy"
+              />
+              <span class="room-card__arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="room-card__details">
+              <div><p class="overline">01 / THE CLASSIC</p><h3>Slow Morning</h3></div>
+              <p>From <strong>$180</strong> <span>/ night</span></p>
+            </div>
+            <p class="room-card__meta">KING BED <span>·</span> 2 GUESTS <span>·</span> 32 M²</p>
+          </article>
+          <article class="room-card reveal">
+            <a class="room-card__image" href="booking.html?room=Sunday%20Somewhere" aria-label="Plan a stay in the Sunday Somewhere suite">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=85"
+                alt="Quiet, thoughtfully furnished hotel suite"
+                loading="lazy"
+              />
+              <span class="room-card__arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="room-card__details">
+              <div><p class="overline">02 / THE SUITE</p><h3>Sunday Somewhere</h3></div>
+              <p>From <strong>$260</strong> <span>/ night</span></p>
+            </div>
+            <p class="room-card__meta">KING BED <span>·</span> 3 GUESTS <span>·</span> 48 M²</p>
+          </article>
+          <article class="room-card reveal">
+            <a class="room-card__image" href="booking.html?room=Room%20to%20Unwind" aria-label="Plan a stay in the Room to Unwind">
+              <img
+                src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1000&q=85"
+                alt="A calm, airy bedroom with soft neutral tones"
+                loading="lazy"
+              />
+              <span class="room-card__arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="room-card__details">
+              <div><p class="overline">03 / THE HIDEAWAY</p><h3>Room to Unwind</h3></div>
+              <p>From <strong>$320</strong> <span>/ night</span></p>
+            </div>
+            <p class="room-card__meta">KING BED <span>·</span> 4 GUESTS <span>·</span> 64 M²</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-band" id="journal">
+        <div class="quote-band__inner reveal">
+          <span class="quote-band__mark" aria-hidden="true">“</span>
+          <p class="eyebrow">A NOTE FROM US</p>
+          <blockquote>“The luxury is having nowhere else<br class="desktop-break" /> you need to be.”</blockquote>
+          <p class="quote-band__attribution">THE ROYAL HOTEL PHILOSOPHY</p>
+        </div>
+        <span class="quote-band__ornament" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="experiences section-pad" id="experiences">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span> LITTLE THINGS, LOVINGLY DONE</p>
+            <h2>Make a day of <em>doing less.</em></h2>
+          </div>
+          <p class="section-heading__note">No rush, no checklist. Just a few lovely ways to spend the day.</p>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card experience-card--large reveal">
+            <img
+              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1300&q=85"
+              alt="A tranquil spa space ready for a restorative treatment"
+              loading="lazy"
+            />
+            <div class="experience-card__overlay">
+              <span class="experience-card__number">01 — TAKE A BREATH</span>
+              <h3>A slower kind of spa day</h3>
+              <a href="experiences.html" aria-label="Explore a slower kind of spa day">↗</a>
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+              alt="A candlelit table set for a relaxed dinner"
+              loading="lazy"
+            />
+            <div class="experience-card__overlay">
+              <span class="experience-card__number">02 — SAVE YOURSELF A SEAT</span>
+              <h3>Something good, made slowly</h3>
+              <a href="experiences.html" aria-label="Explore something good, made slowly">↗</a>
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=85"
+              alt="Soft morning light falling over the ocean"
+              loading="lazy"
+            />
+            <div class="experience-card__overlay">
+              <span class="experience-card__number">03 — FIND YOUR OWN PACE</span>
+              <h3>A morning without plans</h3>
+              <a href="experiences.html" aria-label="Explore a morning without plans">↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter__decoration" aria-hidden="true">✳</div>
+        <div class="newsletter__content reveal">
+          <p class="eyebrow">A POSTCARD NOW AND THEN</p>
+          <h2>A little more <em>lovely</em><br />in your inbox.</h2>
+          <p>Notes from the hotel, thoughtful escapes and the occasional very good reason to get away.</p>
+          <form class="newsletter__form" id="newsletter-form">
+            <label class="visually-hidden" for="newsletter-email">Your email address</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required />
+            <button type="submit" aria-label="Subscribe to the newsletter">Join us <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="newsletter__message" id="newsletter-message" role="status" aria-live="polite"></p>
+          <span class="newsletter__fine-print">Just the good stuff. Occasional notes from the hotel.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="wordmark wordmark--footer" href="index.html">
+          <span class="wordmark__crown" aria-hidden="true">✳</span>
+          <span>ROYAL <span class="wordmark__light">HOTEL</span></span>
+        </a>
+        <p class="footer-note">Make yourself at home.<br />Stay a little longer.</p>
+        <div class="footer-links">
+          <div><span class="overline">WANDER A LITTLE</span><a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html">Experiences</a></div>
+          <div><span class="overline">LET’S MAKE A PLAN</span><a href="booking.html">Plan your stay ↗</a><a href="contact.html">Contact us ↗</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="current-year"></span> ROYAL HOTEL. MADE FOR SLOW DAYS.</span>
+        <a href="#top">BACK TO THE TOP ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

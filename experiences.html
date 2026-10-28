@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content="Take your time at Royal Hotel. Discover gentle ways to spend the day, from a slower spa ritual to a long, easy dinner." />
+    <title>Experiences — Royal Hotel</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="index.html" aria-label="Royal Hotel home"><span class="wordmark__crown" aria-hidden="true">✳</span><span>ROYAL <span class="wordmark__light">HOTEL</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html" aria-current="page">Experiences</a><a href="contact.html">Contact</a></nav>
+      <a class="header-cta" href="booking.html">Find your stay <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <section class="page-hero page-hero--experiences" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow__line"></span> NO CHECKLIST REQUIRED</p>
+        <h1 id="page-title">The joy of<br /><em>doing less.</em></h1>
+        <p>Follow your mood. Stay a while. See where the day takes you.</p>
+      </section>
+      <section class="experiences experiences-page section-pad">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="eyebrow__line"></span> LITTLE THINGS, LOVINGLY DONE</p><h2>Make a day of <em>your own.</em></h2></div>
+          <p class="section-heading__note">A few ideas to get you started. Or don’t plan a thing.</p>
+        </div>
+        <div class="experience-grid experience-grid--page">
+          <article class="experience-card experience-card--large reveal"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1500&q=85" alt="Quiet spa setting for a restorative afternoon" loading="lazy" /><div class="experience-card__overlay"><span class="experience-card__number">01 — TAKE A BREATH</span><h3>A slower kind of spa day</h3></div></article>
+          <article class="experience-card reveal"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=85" alt="Candlelit table ready for dinner" loading="lazy" /><div class="experience-card__overlay"><span class="experience-card__number">02 — SAVE YOURSELF A SEAT</span><h3>Something good, made slowly</h3></div></article>
+          <article class="experience-card reveal"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1100&q=85" alt="Quiet morning waves at the water's edge" loading="lazy" /><div class="experience-card__overlay"><span class="experience-card__number">03 — FIND YOUR OWN PACE</span><h3>A morning without plans</h3></div></article>
+        </div>
+        <p class="sample-disclaimer">Experiences and facilities shown are inspirational sample content; contact us to confirm what's currently available.</p>
+      </section>
+      <section class="page-cta"><p class="eyebrow">A CHANGE OF SCENE LOOKS GOOD ON YOU</p><h2>Make some room <em>for yourself.</em></h2><a class="button button--dark" href="booking.html">Plan your stay <span>↗</span></a></section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="wordmark wordmark--footer" href="index.html"><span class="wordmark__crown" aria-hidden="true">✳</span><span>ROYAL <span class="wordmark__light">HOTEL</span></span></a>
+        <p class="footer-note">Make yourself at home.<br />Stay a little longer.</p>
+        <div class="footer-links"><div><span class="overline">WANDER A LITTLE</span><a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html">Experiences</a></div><div><span class="overline">LET’S MAKE A PLAN</span><a href="booking.html">Plan your stay ↗</a><a href="contact.html">Contact us ↗</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> ROYAL HOTEL. MADE FOR SLOW DAYS.</span><a href="#top">BACK TO THE TOP ↑</a></div>
+    </footer>
+  </body>
+</html>

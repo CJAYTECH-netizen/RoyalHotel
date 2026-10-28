@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content="Get in touch with the Royal Hotel team. We're happy to help with questions, plans and special requests." />
+    <title>Contact us — Royal Hotel</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="index.html" aria-label="Royal Hotel home"><span class="wordmark__crown" aria-hidden="true">✳</span><span>ROYAL <span class="wordmark__light">HOTEL</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html">Experiences</a><a href="contact.html" aria-current="page">Contact</a></nav>
+      <a class="header-cta" href="booking.html">Find your stay <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <section class="page-hero page-hero--contact" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow__line"></span> THERE'S A REAL PERSON HERE</p>
+        <h1 id="page-title">We'd love to<br /><em>hear from you.</em></h1>
+        <p>Questions, daydreams, special requests. Our door is open.</p>
+      </section>
+      <section class="page-content contact-page">
+        <div class="contact-details reveal">
+          <p class="overline">SOME WAYS TO SAY HELLO</p>
+          <h2>Good conversations<br />start <em>somewhere.</em></h2>
+          <p class="body-copy">Whether you’re planning a visit or just have a question, drop us a note. We’ll get back to you as soon as we can.</p>
+          <div class="contact-method"><span class="overline">EMAIL</span><a href="mailto:hello@royalhotel.com">hello@royalhotel.com ↗</a></div>
+          <div class="contact-method"><span class="overline">CALL</span><a href="tel:+15550140100">+1 (555) 014-0100 ↗</a></div>
+          <div class="contact-method"><span class="overline">WHEN WE’RE AROUND</span><span>Every day, 9am–6pm</span></div>
+          <p class="contact-disclaimer">Hotel contact details shown are sample details. Replace them with your verified contact information before publishing.</p>
+        </div>
+        <form class="detail-form reveal" id="contact-form">
+          <div class="detail-form__heading"><span class="overline">SEND US A NOTE</span><span class="detail-form__required">* REQUIRED</span></div>
+          <label class="form-field"><span>Your name *</span><input name="name" type="text" autocomplete="name" placeholder="How should we address you?" required /></label>
+          <label class="form-field"><span>Email address *</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+          <label class="form-field"><span>What can we help with?</span><select name="topic"><option>General question</option><option>Booking enquiry</option><option>Room information</option><option>Celebration or special request</option><option>Something else</option></select></label>
+          <label class="form-field"><span>Your message *</span><textarea name="message" rows="5" placeholder="Write us a little note…" required></textarea></label>
+          <button class="button button--dark form-submit" type="submit">Prepare your message <span aria-hidden="true">↗</span></button>
+          <p class="form-result" id="contact-result" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="wordmark wordmark--footer" href="index.html"><span class="wordmark__crown" aria-hidden="true">✳</span><span>ROYAL <span class="wordmark__light">HOTEL</span></span></a>
+        <p class="footer-note">Make yourself at home.<br />Stay a little longer.</p>
+        <div class="footer-links"><div><span class="overline">WANDER A LITTLE</span><a href="about.html">The stay</a><a href="rooms.html">Rooms</a><a href="experiences.html">Experiences</a></div><div><span class="overline">LET’S MAKE A PLAN</span><a href="booking.html">Plan your stay ↗</a><a href="contact.html">Contact us ↗</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> ROYAL HOTEL. MADE FOR SLOW DAYS.</span><a href="#top">BACK TO THE TOP ↑</a></div>
+    </footer>
+  </body>
+</html>
