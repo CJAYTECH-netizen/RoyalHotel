@@ -18,6 +18,8 @@ npm run dev
 
 Open the local URL printed by Vite (by default, `http://localhost:5173`).
 
-The stay planner carries selected dates and guest counts into the booking enquiry page. Booking and contact forms validate their fields and prepare an email draft in the visitor's email app; they do not make a reservation or send data to a server. Update `hello@royalhotel.com` in the pages and `script.js` to the hotel's real email address. Connect a booking provider and a mailing-list service before accepting real reservations or subscriptions.
+Run `npm run typecheck` to check the TypeScript, or `npm run build` to type-check and create a production build of all six pages in `dist/`.
+
+The stay planner carries selected dates and guest counts into the booking enquiry page. Booking and contact forms validate their fields and prepare an email draft in the visitor's email app; they do not make a reservation or send data to a server. Update `hello@royalhotel.com` in the pages and `script.ts` to the hotel's real email address. Connect a booking provider and a mailing-list service before accepting real reservations or subscriptions.
 
 Room names, rates, contact details, amenities and hotel copy are sample content; replace them with verified property details before publishing. Fonts and hotel photography are loaded from Google Fonts and Unsplash.

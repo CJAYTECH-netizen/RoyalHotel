@@ -4,9 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1"
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build"
   },
   "devDependencies": {
+    "typescript": "^7.0.2",
     "vite": "^7.0.0"
   }
 }
